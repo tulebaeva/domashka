@@ -1,0 +1,102 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgba(245, 245, 220, 0.815);
+        }
+        .mb-32 {
+            margin-bottom: 32px;
+        }
+        
+        .mt-32 {
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-32 mt-32">Информация о вас</h1>
+        <div class="row">
+            <div class="col-md-6 mb-32">
+                <div class="ffs">
+                    <div class="form-group mb-32">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp" style="background-color: rgba(202, 183, 240, 0.726); color: rgb(51, 174, 245); border: 1px solid black;"/>
+                        <small id="emailHelp" class="form-text text-muted">Пример: Анна Иванова Денисовна</small>
+                    </div>
+                    
+                    <div class="form-group mb-32">
+                        <label for="age">Ваш возраст</label>
+                        <input type="number" min="16" max="30" name="age" class="form-control" id="age" style="background-color: rgba(202, 183, 240, 0.726); color: rgb(51, 174, 245); border: 1px solid black"/>
+                    </div>
+                    
+                    <div>
+                        <div class="form-group mb-32">
+                            <label for="biography">Ваша биография</label>
+                            <textarea name="biography" id="description" cols="30" rows="10" placeholder="Напишите о себе, ваше хобби и вид деятельности" style="width: 100%;background-color: rgba(202, 183, 240, 0.726); color: rgb(51, 174, 245); border: 1px solid black" ></textarea>
+                        </div>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#newModal">
+                            Сохранить
+                        </button>
+                        
+                        <div class="modal fade"  id="newModal" tabindex="-1" aria-labelledby="newModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="newModalLabel">Сохранить ваши данные?</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" id="yes">Сохранить изменения</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Не сохранить</button>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                            src="https://www.pdjournal.com/news/photo/201910/70556_70619_33.jpg"
+                            class="d-block w-100" alt="test1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                            src="https://www.pdjournal.com/news/photo/201911/70664_70768_4142.jpg"
+                            class="d-block w-100" alt="test2" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
